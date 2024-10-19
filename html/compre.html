@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link rel="stylesheet/less" type="text/css" href="/css/compre.less" />
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <li>
+                <ul><h1>Doceria Sla Oq</h1></ul>
+            </li>
+        
+            <li class="menu">
+                <ul><a href="sobremesa">Sobremesas</a></ul>
+                <ul><a href="doces">Doces</a></ul>
+                <ul><a href="tort">Tortas</a></ul>
+            </li>
+
+        </nav>
+    </header>
+   
+    <main>
+        <section class="pt1">
+            <img src="../img/lowcarb-combo.jpg" alt="">
+            <p>Brigadeiro Trufado 50g</p>
+            <p>R$2,50 Cada Brigadeiro</p>
+            <label for="Quantidade">Quantidade: </label>
+            <input type="number" name="" id="Quantidade" min="0" placeholder="0">
+            <p>Total: R$ <span id="total">0.00</span></p>
+        </section>
+
+        <section class="pt2">
+            <form action="">
+                    <label for="">Nome Completo:</label>
+                    <input type="text" name="" id="nome" placeholder=" Filipe Gomes dos Santos">
+
+                    <label for="">Endereço:</label>
+                    <input type="text" name="" id="endereco" placeholder=" Rua Chaves, Jardim Alegria">
+
+                    <label for="">Cidade:</label>
+                    <input type="text" placeholder=" São José" id="cty">
+                    
+                    <label for="">Estado</label>
+                    <input type="text" placeholder=" São Paulo" id="estado">
+
+                    <a id="whatsappLink" class="whatsapp-button" href="#" target="_blank">Enviar Pedido pelo WhatsApp</a>
+            </form>
+        </section>
+        
+    </main>
+
+    <footer>
+
+    </footer>
+
+
+
+    <script>
+        less = env="development";
+    </script>
+    <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/less" ></script>
+</body>
+</html>

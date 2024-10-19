@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Merienda:wght@300..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    box-sizing: border-box;
+    background-color: #feffbc;
+    font-family: 'Merienda', cursive;
+}
+
+@primary-color: #fcff95;
+@txt-color: rgb(0, 0, 0);
+
+header {
+    background-color: @primary-color;
+    box-shadow: 2px 3px 25px -12px black;
+    padding: 15px;
+    font-family: 'Kaushan Script', cursive;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    nav {
+        gap: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        background-color: @primary-color;
+    }
+    
+    li {
+        display: flex;
+        align-items: center;
+        background-color: @primary-color;
+    }
+    
+    li h1 {
+        background-color: @primary-color;
+        margin-right: auto;
+        font-size: 1.8rem;
+    }
+    
+    li.menu {
+        display: flex;
+        gap: 20px;
+        background-color: @primary-color;
+    }
+    
+    ul a {
+        color: @txt-color;
+        text-decoration: none;
+        background-color: @primary-color;
+        font-size: 19px;
+        font-family: 'Merienda', cursive;
+        transition: all .3s;
+    }
+    a:hover{
+        border-bottom: black solid 1.5px;
+    }
+}
+main{
+    margin: 2em 3em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    .pt1{
+        text-align: center;
+
+        img{
+            border-radius: 20px;
+            max-width: 400px;
+        }
+
+        input{
+            text-align: center;
+            border: 1px solid rgb(0, 0, 0);
+            background-color: #fcff95;
+            padding: 3px;
+            width: 60px;
+            border-radius: 20px;
+        }
+
+        input::-webkit-inner-spin-button{
+            all: unset;
+        }
+
+        
+    }
+    .pt2{
+            border-left: 2px solid black;
+            
+            form{
+                margin: 6em;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+
+                input{
+                    width: 300px;
+                    border: 1px solid rgb(0, 0, 0);
+                    background-color: #fcff95;
+                    padding: 3px;
+                    border-radius: 20px;
+                }
+            }
+        }
+}
