@@ -4,8 +4,8 @@ const totalDisplay = document.getElementById('total');
 const whatsappLink = document.getElementById('whatsappLink');
 const nameInput = document.getElementById('nome');
 const addressInput = document.getElementById('endereco');
-const cidade = document.getElementById("cty");
-const estado = document.getElementById("estado");
+const cidadeInput = document.getElementById("cty");
+const estadoInput = document.getElementById("estado");
 
 // Função para calcular o total
 function calculateTotal() {
@@ -34,3 +34,5 @@ function updateWhatsAppLink() {
 quantityInput.addEventListener('input', calculateTotal);
 nameInput.addEventListener('input', updateWhatsAppLink);
 addressInput.addEventListener('input', updateWhatsAppLink);
+cidadeInput.addEventListener('input', updateWhatsAppLink);
+estadoInput.addEventListener('input', updateWhatsAppLink);
