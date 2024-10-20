@@ -108,3 +108,33 @@ main{
             }
         }
 }
+
+@media (max-width: 768px) {
+    li.menu {
+        flex-direction: column;
+    }
+
+    main{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+
+        margin: 1rem;
+    }
+    img{
+        width: 20rem;
+    }
+    form{
+        text-align: center;
+        margin: 1em !important;
+    }
+    input{
+        margin: auto;
+    }
+    .pt2{
+        border-top: 2px solid black;
+        border-left: none !important;
+    }
+    .pt1{
+        margin-bottom: 20px;
+    }
+}
